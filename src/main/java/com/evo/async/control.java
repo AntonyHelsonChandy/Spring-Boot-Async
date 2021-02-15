@@ -20,6 +20,11 @@ public List<Model> show() {
 return ff.showall();	
 		
 }
+	@RequestMapping("/jim/{id}")
+	public Model getall(@PathVariable String id){
+		return  ff.showall(id);
+		
+	}
 	
 	
 	
